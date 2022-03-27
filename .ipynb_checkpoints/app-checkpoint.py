@@ -74,7 +74,7 @@ def display_results(selected_value):
                                     zmin=valmin,
                                     zmax=valmax,
                                     marker_line_width=0))
-    fig.update_layout(mapbox_style="carto-positron",
+    fig.update_layout(mapbox_style="dark",
                       mapbox_zoom=5.8,
                       mapbox_center = {"lat": 38.0293, "lon": -79.4428})
     fig.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
