@@ -43,7 +43,7 @@ app.layout = html.Div(children=[
                 dcc.Dropdown(
                     id='stats-drop',
                     options=[{'label': i, 'value': i} for i in varlist],
-                    value='MeanCommute'
+                    value='Walk'
                 ),
         ], className='three columns'),
         # right side
@@ -69,7 +69,7 @@ def display_results(selected_value):
     fig = go.Figure(go.Choroplethmapbox(geojson=counties,
                                     locations=df['FIPS'],
                                     z=df[selected_value],
-                                    colorscale='Blues',
+                                    colorscale='Earth',
                                     text=df['County'],
                                     zmin=valmin,
                                     zmax=valmax,
